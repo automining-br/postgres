@@ -6,11 +6,11 @@ on:
       PG_VERSION:
         description: "Postgres version"
         required: true
-        default: "16.0"
+        default: "16"
       EXTENSIONS:
         description: "Postgres extensions to install"
         required: true
-        default: "cron"
+        default: "cron wal2json tds-fdw"
 jobs:
   build:
     runs-on: ubuntu-latest
